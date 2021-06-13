@@ -1,0 +1,58 @@
+1.What is Machine learning ?
+
+Machine learning is an application of Artificial Intelligiance where computer learns from past exp. Past exp. Is the data we have provided by that learning according to algorithms it makes future predictions.
+
+Some applications are : Shopping websites, social media, image recognizition, speech recognizition etc.
+
+2.What is label and features?
+
+Basically Label is dependent variable where we can say that it is output of our dataset.
+And, Feature is Independent variable and we can say that it is input for our dataset. 
+Feature can be more than one as it is input and independent but label should be one as it’s predicted output from all those features.
+Features and label both used in Classification and Regression.
+
+3.Training dataset and testing dataset:
+Machine learning is about using data to train our model.
+ Training dataset and testing dataset are datasets from which we split our dataset into we use in our model to develop and predict future insights.
+Training dataset we use to train our model.
+Testing dataset we use to test our model to check performance.
+So, that our model able to predict future values.
+We must train our dataset more and test less. And it should be in ratio of 7:3 or 8:2 between training and testing resp. to get accurate predictions.
+
+4. Types of machine learning:
+There are three types of Machine Learning :
+    1. Supervised Learning 
+    2. Unsupervised Learning
+    3. Reinforcement Learning
+
+5. Supervised Learning : 
+It is type of ML where we provide labelled data to our machine and model.
+It learns from past data and applies learning to present data to predict future events, in this case input and output data provide help to prediction of the future events.
+E.g. house price dataset or stock market pricing, etc.
+
+ 6. Unsupervised Learning :
+It is also type of ML where machine tries to find patterns. Like in supervised we have to pass labelled data but here it tries to understand by it’s own by provided algorithms and patterns, the future predictions will get take placed.
+Here, output is unknown. 
+E.g.  Classification of mails into spam or not spam.
+
+7. Types of supervised learning :
+1. Regression : 
+It is type of supervised where the data is in decimal format and it predicts numerical value. 
+It has continuous data. 
+E.g. predicting house price or car price or Marks of a student, etc.
+
+2. Classification :
+It is used to get discrete results, used to classify data into categories.
+Basically it predicts categorical data.
+E.g. the person gender like male or female, If a person is Covid +ve or –ve, Etc.
+
+8. Types of unsupervised learning:
+Clustering : 
+Basically clustering means grouping.
+Organizing or arranging any unlabeled data into similar groups so it can modify well , called Clustering. 
+E.g. Document analysis, Identifying fake news, spam filters, fraud detection, etc.
+
+9. Reinforcement learning:
+Reinforcement learning is an area of machine learning concerned with how intelligent agents take suitable actions to maximize reward in particular situation.
+E.g. robot or agent tries to reach destination by solving various obstacles or puzzles to get final reward.
+

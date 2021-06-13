@@ -1,0 +1,36 @@
+1. What is linear regression ?
+It is type of regression and algorithm. here, dependent variable is continuous in nature, because it is regression and it deals with continuous data which can be expressed in decimal format.
+So, Relationship between both dependent var. (label) and independent var.(features) is linear in this nature.
+E.g If we have 2 independent variables. Rollno. and marks so result is mostly dependent on marks. So this feature is important that marks are effecting on result and rollno. Is less effective. So the relationship bet. These 2 is linear in nature.
+
+2. Different types of linear regression:
+1. Simple Linear Regression :
+Type of L.R. where, we have one independent var. & one feature.
+And, one dependent var. & one label.
+Like, we have one feature and one label.
+We can say that one independent var. - (x)
+                                  one dependent var.  - (y)
+So, the equation is,  Y = mx + c where,  m = slope and c = coefficient or intercept.
+
+2. Multiple Linear Regression :
+Type of L.R. where we have, more than one independent var. 
+And only one dependent variable. 
+Like, we have multiple features and one label.
+We can say that one independent var. -(x)
+                                  one dependent var.  - (y)
+So, the equation is,
+ 
+    y = c + m1x1 + m2x2 + m3x3 + …… + mnxn  - where,  m = slope and c = coefficient   or intercept.  
+Here, greater value of slope (m), that has most impact to determine perfectly for output.
+E.g. y = 0.4 + 2x1 + 0.4x2 + 4x3 + 1.2x4  --so, max value of m is ‘4’ so, it has most impact for determine accurately.
+
+
+3. Example of Simple L.R. :
+1. Marks obtained by students based on which particular book they used to study. --- here, marks scored is dependent var. and book is independent. 
+2. Predicting car price based on average of that car. -- here, car price is dependent var. and avg. of car is independent. so we can say that…
+
+Example of Multiple L.R. :
+1. Predicting house price based on sqft, windows, furniture, rooms. -- here, house price is dependent but all other parameters are independent and more.
+2. Calculating material price for making refrigerator like switch, wire, stabilizer, coolant, trays. -- here, price is dependent, but all others are independent variables. So we can say that….
+
+

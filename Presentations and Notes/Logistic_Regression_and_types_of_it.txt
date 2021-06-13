@@ -1,0 +1,55 @@
+1. What is Logistic regression?
+Basically, logistic regression is type of classification problem and type of supervised learning algorithm.
+It is used where variable i.e. label is categorical.
+Mainly it finds relationship between features and probability of particular outcome.
+E.g. If we have to predict students graduated from this college or not, based on feature is no. of students then response variable has two values --- yes or no.
+So, in this case linear regression doesn’t work because it needs continuous data so we have to use logistic.
+
+2. Function in logistic regression:
+Logistic regression uses this function and it converts independent variable in terms of probability where it ranges between 0 and 1, w.r.t. dependent variable, this function is known as Sigmoid Function.
+So, as we passes those independent variable to this function it converts value in probability range of 0 to 1.
+We wouldn’t have points in linear nature so to make them in linear nature so we can plot them accurately, we uses Sigmoid Function.
+Y = 1 / 1 + e^(-x)  --- Where Y = value we get to plot as Sigmoid value.
+                X = each value of independent variable which gets transformed.
+                e =  2.718 Constant value.
+                       Natural logarithm base or Euler’s number.
+
+3. Types of logistic regression :
+There are 3 types of Logistic Regression :
+1. Binomial Logistic Regression : 
+        It uses when target variable or labels have only 2 possible values like “0” or “1” and win or loss , yes or no , pass vs. fail , accept or decline, etc. this type of data. 
+2. Multinomial Logistic Regression :
+       We use this LR if target variables or labels have 3 or more possible values.
+Here, Order does not matter for predicting values for labels. (have no quantitative nature).
+It can be like “Vehicle 1” vs “Vehicle 2” vs “Vehicle 3” ,here order doesn’t matter.
+
+
+3. Ordinal Logistic Regression : 
+         It has same nature like Multinomial like we if labels are 3 or more but, here Order does matter. 
+Like, we can take data for grading purpose. Here we have labels more than 3, but we have to arrange them in order 
+    e.g. grades like  --- very poor, poor, good, very good, excellent.
+            scores like  ---- 0, 1, 2, 3, 4.
+
+The difference between these 2 is just about Order. else is same.
+
+
+4. Applications of logistic regression :
+Fraud Detection 
+Email spam or not
+Disease diagnosis
+Detection of things
+Logistic regression is used in 
+    Deep Learning also.
+Logistic Regression is simple and efficient, has low variance.
+And it provides mainly probability for observation.
+But, we cannot use in large dataset of categorical labels, coz it will take more time and computation also.
+
+
+5. Why logistic regression used to solve classification problems ?
+
+According to name it shows it will do computation for Regression, but basically it deals with independent variables and on labels which are categorical in nature.
+And for categorical data we use Classification.  
+And mainly, Logistic regression is not called as Logistic classification even though its a classification algorithm because it produces real values of output based on the input features just like linear regression.
+But here these real values are applied to a sigmoid or logistic function. Therefore any value greater than 0.5 gets labeled as positive class and other labelled as negative class just like yes or no labels. Yes --1 and No -- 0
+
+ 

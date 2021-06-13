@@ -1,0 +1,52 @@
+1. KNN Algorithm in Machine Learning?
+KNN is supervised based learning algorithm and it is used to solve both types of problems on Classification and Regression as well. We know the target variable so it is Supervised based.
+Basically, it calculates values for each row and column and by providing our K value according to that dataset it calculates using distance formula.
+And, based on those values we compare our K and whichever values are nearest to it which is neighbors ,we take those and on majority we can predict new values for our dataset
+E.g. K = 3, and after applying Distance formula I got 3 values -- 1.4, 1, 2.6 so, I will check in result set if we get all D, D, D i.e. distinction result then I can say next prediction will be Distinction. This is how knn woks.
+Distance Formula =   a = (x2 – x1)2 + (y2 – y1)2 whole square root. 
+
+
+2. What is K in KNN Algorithm?
+Basically, K is a number used to identify similar neighbors for the prediction of new data point.
+Example wise if I have to find trees based on it’s look, height, leaf nature then I will select 3 trees to be predicted for new. So, here K = 3.
+KNN takes the k nearest neighbors to decide where the new data point will belong to. And then our new values for trees will get successful. All these are based on feature similarity where distance factor comes.
+We can choose value for k either 3 or 5. this can be imp task as it will affected much more on dataset. K = 1, it is high error rate for test because we cannot predict with accuracy. If dataset is a bit huge we take k = 5 but not more than that. If k value is too small then might be the chances of overfitting. (Error)
+
+
+3. Steps in KNN Algorithm :
+  Step 1 : Choose a value for k. the value for k always should be an Odd number. Not too small as overfitting occurs, not too high as expensive computation may occur.
+  Step 2 : Find the distance of the new data point to each of the training data using distance formula. 
+  Step 3 : Find the K nearest neighbors to the new data point according to value of K. and then we can predict new data points based on majority.
+  Step 4 : For Classification, count the number of data points for every rows columns category from the K neighbors and then new data points will proceed to class that has the most neighbors or majority we can say.
+For Regression, value for the new data points will be average of the k neighbors. Like, we get 3, 3, 4, 5, 3 as neighbors so, new data will be avg. of these values.  
+
+
+4. How distance is calculated in KNN?
+ To get k Neighbors we have to find out the values which get calculated by distance formula which also uses in feature scaling, 
+ so to calculate we take features and perform calculations on them 
+Like, a = (x2 – x1)2 + (y2 – y1)2 whole square root --- Distance formula or Eudealins Formula. It is square root of the sum of squared between two points.
+Manhattan distance : Sum of the absolute values of the differences between two points. Distance between (x1,y1) and (x2,y2) = |x1-x2| + |y1 – y2|
+Then K neighbors will get found out and prediction takes place.
+
+
+5. Pros of KNN Algorithm: 
+ 1.KNN Algorithm used for both Classification and Regression problems. 
+2.Training step is much faster compared to other machine learning algorithms as here not included any testing step to work on.
+3.Versatile --uses multiple wise
+4.Gives majority results, which helps to predict new values fast.
+
+
+6. Cons of KNN Algorithm:
+1. KNN is computationally expensive as it finds all new data points at prediction stage.
+2. High memory requirements as it has to store all data points.
+3. Prediction stage is very costly because due to finding out all distance majors.
+4. Not able to work on huge datasets.
+
+
+7. Applications of KNN Algorithm :
+  1 ) According to collecting feedbacks of employees from customers, company can negotiate the future predictions of new employees how they should work.
+ And if feedback is positive then by taking some K value it will be easy for new data points to calculate with majority.
+ Company can decide employees, products, material based on this method.
+  2 ) Credit ratings - collecting financial characteristics vs. comparing people with similar financial features to a database. By the very nature of a credit rating, people who have similar financial details would be given similar credit ratings. Therefore, they would like to be able to use this existing database to predict a new customer's credit rating, without having to perform all the calculations. 
+ Should the bank give a loan to an individual? Would an individual default on his or her loan? Is that person closer in characteristics to people who defaulted or did not default on their loans?
+
