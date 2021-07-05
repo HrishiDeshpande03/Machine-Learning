@@ -1,0 +1,79 @@
+What is confusion metrics ?
+Basically, we use confusion metrics to find accuracy and complete performance and details of all our classification based model.
+When we calculate confusion metrics it gives us 4 values.
+It is much better way to enhance performance of classifier.
+And it used to compare predicted and actual values.
+These 4 values are tp, tn, fp, fn. ( true positive, true negative, false positive and false positive values )
+
+
+
+What are true positive, true negative, false positive and false positive values ?
+There are 2 types of main values :- Predicted and actual.
+Predicted : values given by our model.
+Actual : the actual target value.
+E.g. if team is winning (+) or losing (-) the  match.
+According to predicted and actual values we can get 4 values that are tp, tn, fp, fn. 
+
+
+
+1. true positive (tp) : Actual positive and predicted as positive. Here p is model predicted positive value. According to basis of categorizing with actual values we get this. 
+     e.g. team has won the match and is told that they won it. 
+
+2. true negative (tn) : Actual negative and predicted as negative. Here p is model predicted negative value. 
+     e.g. team has lost the match and is told that they lost it.
+
+TYPE 1 AND TYPE 2 ERROR :
+
+3. false positive (fp) : Actual negative but predicted as positive. Here p is model predicted positive value. 
+Also called as type 1 error.
+     e.g. team has lost the match but is told that they won it.
+
+
+4. false negative (fn) : Actual positive but predicted as negative. Here p is model predicted negative value. 
+Also called as type 2 error.
+     e.g. team has won the match but is told that they lost it.
+
+A good model can be considered as with high tp and tn rates while, low fp and fn rates.
+
+
+
+What is accuracy and error rate ? 
+Accuracy : it is nothing but how many true values we are getting out of the total. From all classes how many we have predicted correctly.
+It should be high as possible.
+    accuracy = (tp + tn) / total  
+
+Error rate : this is value of errors of false values we are getting and it is vise versa of accuracy. 
+   error rate = (fp + fn) / total or  1 – accuracy
+
+
+
+What is precision and recall ?
+Precision (positive predicted value)
+recall (Sensitivity, hit rate, true positive rate )
+
+Precision : here, we are calculating total true / positive values from predicted yes values. 
+Precision should be high as possible.
+  Ppv = tp / predicted yes 
+    = Ppv = tp / (tp + fp) 
+
+Recall : here, from actual positive classes we are finding how many we are predicted correctly.
+Recall also should be high as possible.
+Tpr = tp / actual yes
+   = tpr = tp / (tp + fn)
+
+
+
+What is f1 score in accuracy metrics ?
+We can say if our model has high precision and recall both, our model will be good.
+Or if it has low precision or recall then model won’t be good or cannot predicted well.
+But, what if we have low precision and high recall or vice versa, so to make them comparable we use f1 score. 
+It helps to measure recall and precision at the same time. It uses here harmonic mean instead of arithmetic mean.
+It gives us result by comparing both precision and recall.  
+
+
+
+F1 score is harmonic mean of precision and recall, and so it gives combined idea of these two metrics. 
+Closer the f1 score to the 1, better the accuracy of our model.
+F1 = 2 * recall * precision / Recall + precision
+
+

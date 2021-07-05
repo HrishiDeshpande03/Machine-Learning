@@ -1,0 +1,50 @@
+What is feature scaling ?
+This is one of the most important data processing step in machine learning.
+We use mainly this concept of feature scaling in the algorithms where uses the concept of Distance and Gradient Descent. 
+This algorithms compute distance between features which are biased for numerically larger values if the data is not scaled.
+Like ,if we don’t apply feature scaling on unscaled data then training will not perfect.
+Also, Feature Scaling helps ML, DL algorithms to train and coverage faster for prediction.
+
+
+Example for feature scaling
+One feature is in whole KMs other in Mtrs and another one is in CM^2,  so how we can use these features as they vary vastly.
+This is where concept of feature scaling used.
+Firstly, we scale our data before applying distance algo. on them so, that all features contribute equally to the result.
+
+
+
+Algorithms used for feature scaling :
+We use algorithms for feature scaling like :-
+1. KNN
+2. K means clustering
+3. Deep learning based algorithms.
+
+
+Techniques in feature scaling :
+There are two techniques used in feature scaling :-
+1. Normalization  / Min-Max scaling :
+2. Standardization / Z score normalization :
+
+
+Normalization / min-max scaling :
+It mainly helps down feature in range between o and 1. 
+Here, new point is calculated as, 
+Formula : xnew = x - xmin / xmax - xmin
+
+
+Scale ranges between 0 to 1. and also called as Min – Max scalar.
+This technique used in classification problem.
+It is required where attributes are on a different scale. When multiple attributes are there and have on different and big scale, it will lead in poor data model. So, they normalized this to bring all attributes / features on same scale.
+
+
+Standardization / z score normalization :
+This is transformation of features by subtracting from mean and dividing it by standard deviation. This also called as Z-score.
+It also helps to scale down features based on standard normal distribution.
+But, here it ranges in negative values also. So we cannot define range here.
+Formula :   z = x - meu / sigma
+
+                 where, z= new data point , x = column                  value , next mean and standard deviation.
+So, basically it is a scaling technique where values are centered around mean with a standard deviation. So, after scaling down features , mean of attributes becomes zero and resultant distribution has a standard deviation with value 1.
+
+
+

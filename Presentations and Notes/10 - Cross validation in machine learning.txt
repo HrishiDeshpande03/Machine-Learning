@@ -1,0 +1,61 @@
+What is cross validation in machine learning ?
+Cross-validation is a technique in which we train our model using the subset of our data-set and then evaluate that 
+using the complementary subset of the data-set. Mainly, we use one part for training and one part for testing.
+Like, we should not only train but test also for our model. We should remain some part for testing our dataset.
+Steps in cross validation :
+  1. Reserve some portion of given sample dataset for testing purpose for model.
+  2. using the rest dataset to train our model.
+
+
+
+Which are the methods of cross validation ?
+There are three methods for cross validation.
+But in first 2 , there are some disadvantage so we preferably use 3rd method for validation.
+1. Validation
+2. LOOCV (Leave one out cross validation)
+3. K-fold cross validation 
+
+
+1. validation : here, we divide our dataset into 50% training and 50% testing.
+But, if we use 50% data for training then there might chances that remaining 
+50% of testing data may contain important data which is important for prediction for new values.
+so, due to this, underfitting prob. May occur like high biased.
+To overcome this advantage we use next method which is loocv.
+
+2. Loocv (Leave one out cross validation) : here, we use more like 99% data for training and remain 1% data for testing.
+In this method, we perform training on the whole data-set but leaves only one data-point of the available 
+data-set and then iterates for each data-point.
+
+
+E.g. if we have 10 datapoints so, 
+1st iteration : 9 for training , 1 for testing.
+2nd iteration : 9th datapoint for testing, remaining for training.
+3rd iteration : 8th datapoint for testing, remaining for training.
+4th iteration : 7th dataoint for testing, remaining for training……upto nth iterations.
+Like this, all data will get trained and tested.
+Advantage : low bias because we have trained all data.
+Disadvantage : it leads for higher variations for testing because we are testing for each dtpoint.
+Iterations will be more. High computation rate.
+More execution time as it operates on iterations n times.
+
+
+3. K-fold cross validation :
+In this method, we split dataset into k- times (k parts). Then we perform training on all subsets.
+we split the data-set into k number of subsets(known as folds) then we perform training on 
+the all the subsets but leave one part(k-1) subset for the evaluation of the trained model. In this method, 
+we iterate k times with a different subset reserved for testing purpose each time.
+This is most used method for cross validation.
+E.g. we have 100 datapoints (100 rows),
+   then, instead only 1 keeping for testing & rest for train , we divide our dataset in 10 parts so, here K = 10.
+   then 90% we use for training and rest for testing.
+2nd iteration : we include 10 % testing into training from previous iteration and remaining for testing 
+Other 10% for testing and remaining more will be in training.
+This is how k fold works. 
+
+
+Why do we prefer using k-fold cross validation over other methods ?
+Because there are important advantages of K-fold :
+1. This runs K times faster than Leave One Out cross-validation because K-fold cross-validation repeats the train/test split K-times.
+2. It is more accurate. 
+3. More “efficient” use of data as every observation is used for both training and testing.
+It used mostly for cross validation.

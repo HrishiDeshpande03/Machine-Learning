@@ -1,0 +1,40 @@
+What is Regularization technique ?
+Regularization is a technique in machine learning used to avoid the overfitting problem. 
+Regularization works by adding a penalty to the complex model.
+
+
+
+What are the different types of regularization technique ?
+There are basically two types of regularization technique : 
+1. Ridge Regression (L2 Regularization)
+2. Lasso Regression (L1 Regularization)
+
+What are the Difference between L2 Regularization and L1 Regularization ?
+Ridge Regression (L2 Regularization) :-
+In this technique, the cost function is altered by adding the penalty term to it.
+The amount of bias added to the model is called Ridge Regression penalty. 
+We can calculate it by multiplying with the lambda to the squared weight of each individual feature.
+Loss = error (y, y^) + lambda * summation (w2) where w = all weights
+
+
+Lasso Regression  (L1 Regularization)
+Lasso regression is another regularization technique to reduce the complexity of the model.
+It is similar to the Ridge Regression except that the penalty term contains only the absolute weights instead of a square of weights.
+Since it takes absolute values, hence, it can shrink the slope to 0, whereas Ridge Regression can only shrink it near to 0.
+Some of the features in this technique are completely neglected for model evaluation.
+Hence, the Lasso regression can help us to reduce the overfitting in the model as well as the feature selection.
+Loss = error (y, y^) + lambda * summation |w| where w = all weights
+
+
+
+Key difference between Lasso Regression  (L1 Regularization) and Ridge Regression  (L2 Regularization)
+In the case of Ridge regression is mostly used to reduce the overfitting in the model, and it includes all the features present in the model. 
+It reduces the complexity of the model by shrinking the coefficients.
+In the case of  Lasso regression helps to reduce the overfitting in the model as well as feature selection.
+
+
+What is lambda in regularization ?
+lambda is a Hyperparameter Known as regularisation constant and it is always greater than zero.
+
+
+ 

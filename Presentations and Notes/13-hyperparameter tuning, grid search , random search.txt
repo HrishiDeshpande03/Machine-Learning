@@ -1,0 +1,23 @@
+Hyperparameter Tuning:
+Hyperparameter Tuning is the process of determining the right combination of hyperparameters that allows the model to maximize model performance. 
+Setting the correct combination of hyperparameters is the only way to extract the maximum performance out of models.
+
+
+Techniques of Hyperparameter Tuning:
+Grid Search
+Random search
+
+Grid Search:
+In Grid Search, we try every combination of a preset list of values of the hyper-parameters and evaluate the model for each combination.
+Once all the combinations are evaluated, the model with the set of parameters which give the top accuracy is considered to be the best.
+
+Disadvantages of Grid Search:
+It is very slow. 
+Checking every combination of the space requires a lot of time. 
+In every point in the grid needs k-fold cross-validation, which requires k training steps. So, tuning the hyperparameters of a model in 
+this way can be quite complex and expensive. 
+If we pass multiple parameter then size of grid will increase, iteration will increase and it will be very time consuming process
+
+
+Random search:
+Random search is a technique where random combinations of the hyperparameters are used to find the best solution for the built model.

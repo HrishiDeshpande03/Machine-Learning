@@ -1,0 +1,55 @@
+What is feature engineering ?
+It is important technique used in machine learning to create a model.
+It used to convert many operations that are mainly performed on variables / features to fit them into algorithm.
+It also helps to improve accuracy of our model then prediction also will be accurate.
+The model with feature engineering is perform better than basic ml model. And mainly it organizes dataset perfectly.
+Why feature engineering :
+    There is some issues in our datasets so, by applying feature engineering scale on variables/ features the model will predict well in future.
+
+
+What is imputation technique in feature engineering ?
+We will get some missing values in our dataset like in columns, value might get miss. So, handling those missing values, 
+we use imputation technique.
+Like datasets also might have missing values, it can cause problems for ml algorithms for predictions.
+So, it will be good for handling missing values and replace / reform it for good prediction.
+
+
+
+How we deal by using imputation for missing values ?
+For handling missing values for both categorical and numerical datasets / labels, we use mean , median and mode here.
+It works for both numerical as well as for categorical data.
+In practical wise :  
+               x = df[‘col.name’].mean()
+                     df[‘col.name’].fillna(x, inplace=true)
+Like this syntax, we use for median and mode also.
+For checking missing values we can also use df.info() , df.isnull() , df.isnull.sum() according to this we will check for each column.
+
+
+What is feature encoding ?
+This is conversion of categorical features / columns into the numeric values or in labels as machine learning models 
+cannot handle the tesxt data directly.
+According to this our model will predict well and we use algorithms in our model and will develop it.
+
+
+What are the different types of feature encoding in ml ?
+There are 2 types in feature encoding :
+1. Label Encoding
+2. one hot encoding
+
+1. label encoding : it converts the labels into numeric form to convert it into machine readable format because
+ without this machine cannot read that data.
+After this, machine will handle labels in well manner.
+Basically, if your columns data is in category like male, female ,yes, no then we have to convert it into labelled format like 0 ,1 .
+E.g. col name = fruits :
+                                        mango , apple , watermelon   -----    0 , 1 , 2  
+    so, these are labels for particular names.
+
+
+2. One hot encoding :there is one disadvantage of label encoding ----- we apply label encoding for our labels but what if
+ we have to apply that on features column,
+ then it will assign values for data like 0, 1 but our model might consider it like priority basis like 0 – less, 1 – more but it’s not like that.
+ so, to overcome this prob we use one hot encoding technique to work on features.
+It does operations on features. 
+If feature column has 4 values then it will splitting the categories into different columns, 
+then it will put 0 for null value and 1 for appropriated column value.   
+e.g. apple, mango , apple , banana will be splitted in categories and will be given 0 for null value and 1 for appropriated column value.

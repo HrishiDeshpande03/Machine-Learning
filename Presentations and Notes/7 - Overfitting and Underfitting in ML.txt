@@ -1,0 +1,63 @@
+What is bias and variance ?
+Bias - Bias Means error of the training data.
+Variance - Variance means error of the testing data.
+
+
+What is generalized model?
+Good Model or Generalized Model
+Accuracy during training as well as testing is very high.
+It is able to perform well on training dataset as well as on testing dataset.
+For the best model – High accuracy during training as well as high accuracy during testing.
+
+It has Low Training error
+It has Low Testing Error
+
+It has Low Bias
+It has Low Variance
+
+
+
+
+What is overfitting ?
+Accuracy during training is very high but accuracy during testing is very low then this condition is called overfitting.
+It is able to perform well on training dataset but it does not perform well on testing dataset.
+
+It hasLow Training error
+ It has High Testing Error
+
+It has Low Bias
+It has High Variance
+
+How we avoid overfitting ? 
+cross validation
+training with more data
+remove features
+regularization
+
+
+
+What is underfitting ?
+Accuracy during training is very low but accuracy during testing is very high then this 
+condition is called underfitting.
+
+It  does not perform well on training dataset as well as on testing dataset.
+
+It has High Training error
+It has  High Testing Error
+
+It has High Bias
+It has  High Variance
+
+How we avoid underfitting ? 
+increase no. of features
+increase the data size
+
+
+
+
+What is bias variance tradeoff ?
+when there is a huge bias it means the model has not learned the relevant relationship between the features and the target values. This is also called as Underfitting. And, when there is a high variance 
+it means that the model has learned the data well so that it includes the noise. This is also called Overfitting.
+
+We need to have a model that is neither underfitting and nor overfitting. which is called as Bias-Variance trade-off.
+If there is no balance between variance and bias then the model will not be able to generalize a failure to perform well on new data.
