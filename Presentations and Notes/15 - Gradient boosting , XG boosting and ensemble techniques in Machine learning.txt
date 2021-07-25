@@ -1,0 +1,100 @@
+What is Ensemble technique ?
+
+Ensemble technique is a technique which uses multiple weak learners to produce a strong model for regression and classification.
+
+In ensemble learning, many base models like classifiers and regressors are generated and combined together so that they give better results.
+
+And here in Gradient boosting each predictor is trained using the residual errors of predecessor as labels instead of using directly labels to train our model.
+
+
+
+What is weak learner ?
+
+Weak learners are the models which is used sequentially to reduce the error generated from the previous models and to return a strong model in the end. 
+
+Decision trees are used as weak learner in gradient boosting algorithm. 	 
+
+
+What are the different types of ensemble techniques ?
+
+The three most popular methods for combining the predictions from different models are:
+
+1. Bagging. Building multiple models (typically of the same type) from different subsamples of the training dataset.
+
+2. Boosting. Building multiple models (typically of the same type) each of which learns to fix the prediction errors of a prior model in the sequence of models.
+
+3. Voting. Building multiple models (typically of differing types) and simple statistics (like calculating the mean) are used to combine predictions.
+
+
+What is Gradient Boosting ?
+
+Gradient Boosting is an supervised machine learning algorithm used for classification and regression problems.
+
+Gradient Boosting is a popular boosting algorithm. In gradient boosting, each predictor corrects its predecessor’s error or residual error.
+
+It is an ensemble technique which uses multiple weak learners to produce a strong model for regression and classification.
+
+Here each predictor is trained using the residual errors of predecessor as labels.
+
+
+Each tree predicts a label and final prediction is given by the formula,
+We uses decision tree here for process.
+
+For Residual, 
+     Residual = Actual value – Predicted Value 
+
+
+
+What are the steps of gradient boosting ?
+
+1. Calculate the average/mean of the target variable.
+
+2. calculate the residuals for each sample.
+Residual = Actual Value - Predicted Value
+
+3. use  decision tree algorithm to train the model considering residual as label . We build a tree with the goal of predicting the Residuals.
+
+4. Repeat steps 3 to 5 until the number of iterations matches the number specified by the hyper parameter(numbers of estimators)
+
+
+
+5. Once trained, use all of the trees in the ensemble to make a final prediction as to value of the target variable. 
+The final prediction will be equal to the mean we computed in Step 1 plus all the residuals predicted by the trees that make up the forest multiplied by the learning rate.
+
+final prediction / formula = Average Price + LR*Residual predicted by DT1 + LR*Residual Predicted by DT2 + .......LR*Residual Predicted by DT N
+
+Here,
+LR = Learning rate
+DT = Decision tree
+
+
+XGBoost Algorithm or Extreme gradient boosting :
+
+XGBoost is an advanced implementation of gradient boosting along with some regularization factors
+XGBoost or extreme gradient boosting is one of the well-known boosting techniques(ensemble) having enhanced performance
+and speed in tree-based (sequential decision trees) machine learning algorithms. 
+Earlier only python and R packages were built for XGBoost but now it has extended to Java, Scala, Julia and other languages as well.
+
+The main benefit of the XGBoost implementation is computational efficiency and often better model performance.
+
+
+The main benefit of the XGBoost implementation is computational efficiency and often better model performance.
+
+XGBoost falls under the category of Boosting techniques in Ensemble Learning. 
+
+Ensemble learning consists of a collection of predictors which are multiple models to provide better prediction accuracy.
+In Boosting technique the errors made by previous models are tried to be corrected by succeeding models by adding some weights to the models. 
+
+
+Features of XGBoost :
+
+Can be run on both single and distributed systems(Hadoop, Spark).
+XGBoost is used in supervised learning(regression and classification problems).
+Supports parallel processing.
+Cache optimization.
+Efficient memory management for large datasets exceeding RAM.
+Has a variety of regularizations which helps in reducing overfitting.
+Can handle missing values.
+Has inbuilt Cross-Validation.
+
+

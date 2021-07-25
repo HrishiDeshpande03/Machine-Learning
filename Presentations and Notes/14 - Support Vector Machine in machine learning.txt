@@ -1,0 +1,137 @@
+What is SVM ?
+
+Support Vector Machine or SVM is one of the most popular Supervised Learning algorithms, which is used for Classification as well as Regression problems. 
+but, mostly we use SVM for Classification problems in Machine Learning.
+It helps to find out the best line or decision boundary , called Hyperplane which classifies the data points.
+
+Define Support Vectors, Margin, Hyperplane in SVM :
+
+Firstly, we will Train and test our data and then at the time of prediction we calculate all these .
+Support Vectors : It defines as the data points or vectors that are the closest to the hyperplane. 
+SVM algorithm finds the closest point of the lines from both the classes. These points are called support vectors. 
+
+Margin : 
+       	The distance between the support vectors is called as margin and the goal of SVM is to maximize this margin.
+We always use the margin which has maximum distance between support vectors.
+
+
+Hyperplane in SVM : 
+
+The SVM algorithm helps to find the best line or decision boundary, this best boundary or region is called as a hyperplane.
+Decision boundary that helps to classify data points.
+We always create a hyperplane that has a maximum margin, which means the maximum distance between the data points.
+The hyperplane with maximum margin is called the optimal hyperplane. 
+Hyperplane is basically used for separating data points those are linearly seperable.
+
+
+What are different Types of SVM ?
+
+There are 2 types of SVM for datapoints those are linear and non linear in nature.
+We can categorize it as :
+
+1. LSVM (Linear Support Vector Machine)
+
+2. NLSVM ( Non - Linear Support Vector Machine)
+
+1. LSVM (Linear Support Vector Machine):
+
+Linear SVM is used for linearly separable data, which means if a dataset can be classified into two classes by using a single straight line
+Then such data is termed as linearly separable data, and classifier is used called as Linear SVM classifier.
+
+2. NLSVM ( Non - Linear Support Vector Machine) :
+
+Non-Linear SVM is used for non-linearly separated data, which means if a dataset cannot be classified by using a straight line. 
+Then such data is termed as non-linear data and classifier used is called as Non-linear SVM classifier. Here we use Kernel trick or function.
+If our data is in 1D form then it will convert it into 2D and if we have 2D then in will convert it into 3D. After this, the data points will get linearly separate and then further processes happen by using the Kernel function. 
+Formula : Z = X2 + Y2 
+KERNEL classifies low dimensional input space into high dimensional feature space.
+
+
+
+Types of Kernel Function and Applications in Support Vector Machine (SVM) in Machine learning :
+
+What is the difference between Linearly Separable Dataset & Non-Linearly Separable Dataset ?
+
+Linearly separable data, which means if a dataset can be classified into two classes by using a single straight line and and classifier is used called as Linear SVM classifier.
+But, in NLSVM for non-linear data, we cannot draw a single straight line, here we use NLSVM Classifier and kernel function to make classification.
+
+
+
+How Kernel Trick is useful in NLSVM ?
+
+ Kernels transforms data into higher-dimensional spaces from lower input data space , machine learning algorithms make use of the kernel trick .
+By using this trick, the non linear seperable dataset get separated linearlly,.
+And, after that we can apply hyperplane and margins on our given datasets to solve classification problems and make predictions for new values. 
+
+
+Define Kernel ?
+
+A kernel transforms a low-dimensional input data space into a higher dimensional space. 
+So, it converts non-linear separable problems to linear separable problems by adding more dimensions to it. 
+Thus, the kernel trick helps us to build a more accurate classifier. Hence, it is useful in non-linear separation problems.
+
+In the context of SVMs, there are 4 popular kernels – Linear kernel, Polynomial kernel, Radial Basis Function (RBF) kernel and Sigmoid kernel.
+
+
+Types of kernel :
+
+Linear Kernel: 
+It helps to draw a best fit line that separates both the classes linearly.
+Linear kernel support vector machines have good performance only on very simple problems. We cannot use complex or large datasets here.
+
+Polynomial Kernel:
+In the polynomial kernel, we simply calculate the dot product by increasing the power of the kernel.
+
+
+
+Difference between RBF and Sigmoid :
+
+Radial basis function(RBF)
+RBF is the most popular support vector machine kernel choice, and the default one used in sklearn. 
+RBF is short for "radial basis function“. It is a general-purpose kernel used when there is no prior knowledge about the data. 
+If dataset is very complex then we will by default use RBF there to get quick accuracy. 
+
+Sigmoid Kernel:
+Mostly, it is used in deep learning, to solve ANN based problems.
+
+
+What is C and Gamma in SVM ?
+
+Since kernels transforms data into higher-dimensional spaces , machine learning algorithms making use of the kernel trick have a tendency to overfit.
+The sklearn SVM methods provide  C and gamma functions for this purpose.
+C & Gamma is a hypermeter which is set before the training model and used to control error .
+As the value of C increases the model gets overfits and As the value of C decreases the model gets underfits. So we should have medium C for good model. 
+
+
+Gamma in kernel :
+
+y : Gamma: Gamma (used only for RBF kernel)
+ Behavior: As the value of 'y' increases the model gets overfits. IAs the value of 'y' decreases the model underfits.
+
+
+Applications of kernel :
+
+ Disease Diagnosis
+ Face detection - SVMc classify parts of the image as a face and non face and create a square boundary around the face.
+ Text and hypertext categorization - They use training data to classify documents into different categories. It categorizes on the basis of the score generated and then compares with the threshold value.
+ It Uses training data to classify documents into different categories such as news articles, e-mails, and web pages Examples:
+ Classification of news articles into "business" and "Movies“.
+ Classification of web pages into personal home pages and others.
+
+Classification of images - Use of SVMS provides better search accuracy for image classification.
+ It classifies the parts of the image as face and non-face. It contains training data of n x n pixels with a two-class face (+1) and non-face (-1). Then it extracts features from each pixel as face or non-face. Creates a square boundary around faces on the basis of pixel brightness and classifies each image by using the same process.
+
+
+Pros merits of SVM :
+
+Merit of SVM Pros of SVM classifiers:
+ It works really well with clear margin of separation. It is effective in high dimensional spaces.They work well for both high and low dimensional data. They perform very well on a range of datasets.
+ They are versatile: different kernel functions can be specified, or custom kernels can also be defined for specific data types. 
+
+
+Cons demerits of SVM :
+
+Demerit of SVM Cons of SVM classifiers : 
+They have high training time hence in practice not suitable for large datasets. 
+It also doesn't perform very well, when the data set has more noise.
+

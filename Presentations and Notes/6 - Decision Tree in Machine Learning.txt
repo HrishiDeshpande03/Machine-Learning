@@ -1,0 +1,88 @@
+Define decision tree algorithm :
+
+Decision tree is a supervised type machine learning algorithm and it builds classification or regression models in the form of a tree structure.
+The final result is a tree with decision nodes and leaf nodes. A decision node has two or more branches. 
+Leaf node represents a classification or decision. 
+The topmost decision node in a tree which corresponds to the best predictor, it is called root node.
+And it is a tree in which each node represents a feature, each branch represents decision and each leaf represents outcome(categorical or continuous values).
+
+
+What is root node, decision node & leaf node ?
+
+Root node :- The topmost decision node in a tree which corresponds to the best predictor, it is called root node.
+Decision node :- It represents decisions branches which includes leaf node and it has two or more branches.
+Leaf node :- Leaf node represents a classification or decision from our described model. Iy handles both categorical and numerical data.
+
+
+Define Entropy and Information Gain : 
+
+Entropy is the measurement of impurities or randomness in the data points. It basically ranges between 0-1. 
+0 means it has pure entropy.
+1 means it has impure entropy. 
+
+
+Information gain is used for determining best features / attributes that have maximum information about class.
+
+
+
+What are the different way to create tree in decision tree ?
+
+Firstly, we have to find Information gain here. For that we use one formula, 
+     I.G. = p/p+n log2(p/p+n) – (n/p+n) log2 (n/p+n) 
+Then, we have to make target functions, after that according to ups and downs, we have to calculate IG of target functions.
+Then, for the rest attributes we have to calculate it’s entropy (Like if - age, competition, type)-- each entropy we have to find.
+     Entropy = pi + ni / p + n *  I (pini)
+Then, we have to find each IG of attribute’s value and then entropy of whole attribute by adding all values of IG’s.
+Next, calculate gain for each attribute,
+      Gain = I.G. – E(A) where, IG = I.G. of target functions,  E(A) = Entropy of each attribute.
+Lastly, we will get 3 gains because we have 3 attributes.
+
+
+Write down the process of selecting root node in ID3 : 
+
+1. Find the Information gain of the target attribute.
+2. Find the Entropy of rest attributes.
+3. Find gain for each and every rest attribute.
+         Gain = IG - Entropy
+4. The attribute that has highest gain or topmost decision node in a tree which corresponds to the best predictor will be selected as root node.
+
+
+What is Gini index/gini purity ?
+
+Gini Index - It measures the impurity of the nodes and it ranges between 0-1.
+ we can calculate gini index by ---    Gini Index/Gini Impurity = 1-Gini
+1 - (/Sum of squred propability of each class)    OR      GI = 1 – [  (p(+))  +  (p(-))  ]  where + = yes and - = no
+0  means Data points/feature are pure. Eg. All Yes.
+1 means Data points/feature are impure(Randomness) eg. Yes, No both.
+0.5 means Equal distribution of classes like 5 yes, 5 no. 
+What is GINI ?
+       Gini ranges from zero to one, as it is a probability and the higher this value, the more will be the purity of the    nodes. 
+lesser value means lesser pure nodes.
+1 - pure, 0 – randomness/ less pure   AND  Gini and Gini index are totally opposite to each other.
+Gini works only in scenarios where we have categorical targets. It does not work with continuous targets.
+attribute having least gini impurity value will be selected as root node.
+
+
+How to select root node in Gini index ?
+
+Firstly, we have to find Gini Index by using probability of each class and subtract them from 1 then we will get Gini Index. 
+After that, those values ranges from 0 to 1. 
+0 – purity of classification.
+1 – random distribution of elements across various classes.
+0.5 – Equal distribution over some classes. 
+Then, all from these whoever has value the lowest will get considered as Root Node in Gini index.
+
+
+What is pruning in decision tree ?
+
+Pruning is one of the techniques that is used to overcome  problem of overfitting in decision tree. 
+Pruning is the process of reducing the size of the tree by turning some branch nodes into leaf nodes, and removing the leaf nodes under the original branch.
+It reduces the size of a Decision Tree which might slightly increase training error but drastically decrease your testing error,  so making it more adaptable and executable.
+
+
+ Some Types of pruning:
+Pre-pruning :-  It stop growing the tree earlier, before it perfectly classifies the training set.
+Post-pruning :- It allows the tree to perfectly classify the training set, and then after that prune the tree.
+
+
+
